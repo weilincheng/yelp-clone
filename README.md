@@ -4,5 +4,8 @@ I am following the [PERN Stack Course](https://www.youtube.com/watch?v=J01rYl9T3
 
 Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sYgV-NV6S5_-pqLGChoNQ).
 
+## Day2
+Install dotenv and nodemon. Tested get method which sends a json format back. 
+
 ## Day1
 Install the node environment and install express. 
