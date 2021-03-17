@@ -4,6 +4,10 @@ I am following the [PERN Stack Course](https://www.youtube.com/watch?v=J01rYl9T3
 
 Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sYgV-NV6S5_-pqLGChoNQ).
 
+## Day 4
+1. Install [node-postgres](https://node-postgres.com) 
+2. Connect Express and Postgres 
+
 ## Day 3
 1. Use express middleware express.json to parse the body information in jason format into js object.   
 2. Finish the rest of routes:
