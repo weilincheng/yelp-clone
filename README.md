@@ -4,6 +4,14 @@ I am following the [PERN Stack Course](https://www.youtube.com/watch?v=J01rYl9T3
 
 Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sYgV-NV6S5_-pqLGChoNQ).
 
+## Day 5
+Use query method and retrieve the information with key "rows" to return restaurants information.  
+Implemented below routes.    
+1. Get all restaurants route
+2. Get one restaurant route
+
+
+
 ## Day 4
 1. Install [node-postgres](https://node-postgres.com) 
 2. Connect Express and Postgres 
