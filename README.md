@@ -20,7 +20,6 @@ Second, make id column into identity column
 
     yelp=# ALTER TABLE restaurants
     ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY;
-    ALTER TABLE
     yelp=# \d restaurants
        Column    |         Type          | Collation | Nullable |           Default
     -------------+-----------------------+-----------+----------+------------------------------
