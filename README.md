@@ -4,6 +4,30 @@ I am following the [PERN Stack Course](https://www.youtube.com/watch?v=J01rYl9T3
 
 Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sYgV-NV6S5_-pqLGChoNQ).
 
+## Day 6  
+1. Change id column into identity column  
+
+First, change Nullable into not null 
+
+    yelp=# ALTER TABLE restaurants  
+    ALTER COLUMN id SET NOT NULL;  
+    yelp=# \d restaurants  
+       Column    |         Type          | Collation | Nullable | Default
+    -------------+-----------------------+-----------+----------+---------
+     id          | integer               |           | not null |
+
+Second, make id column into identity column 
+
+    yelp=# ALTER TABLE restaurants
+    ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY;
+    ALTER TABLE
+    yelp=# \d restaurants
+       Column    |         Type          | Collation | Nullable |           Default
+    -------------+-----------------------+-----------+----------+------------------------------
+     id          | integer               |           | not null | generated always as identity
+
+2. Implemented "Create a restaurant" route. Use "returning *" so that when we create the new restaurants the postgres db returns the new entry.  
+
 ## Day 5
 Use query method and retrieve the information with key "rows" to return restaurants information.  
 Implemented below routes.    
