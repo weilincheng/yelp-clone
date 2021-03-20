@@ -10,8 +10,6 @@ Implemented below routes.
 1. Get all restaurants route
 2. Get one restaurant route
 
-
-
 ## Day 4
 1. Install [node-postgres](https://node-postgres.com) 
 2. Connect Express and Postgres 
