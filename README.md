@@ -27,6 +27,11 @@ Second, make id column into identity column
 
 2. Implemented "Create a restaurant" route. Use "returning *" so that when we create the new restaurants the postgres db returns the new entry.  
 
+## Day 6
+Implented two routes:
+1. Update restaurant
+2. Delete restaurant
+
 ## Day 5
 Use query method and retrieve the information with key "rows" to return restaurants information.  
 Implemented below routes.    
