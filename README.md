@@ -4,7 +4,11 @@ I am following the [PERN Stack Course](https://www.youtube.com/watch?v=J01rYl9T3
 
 Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sYgV-NV6S5_-pqLGChoNQ).
 
-## Day 6  
+## Day 8
+1. Set up React with create-react-app
+2. Add link tag to font-awesome and bootstrap
+
+## Day 7  
 1. Change id column into identity column  
 
 First, change Nullable into not null 
