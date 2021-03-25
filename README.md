@@ -4,6 +4,13 @@ I am following the [PERN Stack Course](https://www.youtube.com/watch?v=J01rYl9T3
 
 Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sYgV-NV6S5_-pqLGChoNQ).
 
+## Day 10
+1. Change bootstrap version back to v4.6
+2. Add three compoents 
+    * Header
+    * Add restaurants
+    * Restaurant list
+
 ## Day 9
 ### Setup React Router  
 1. Install React Router 
