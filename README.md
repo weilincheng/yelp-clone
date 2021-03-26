@@ -10,6 +10,7 @@ Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sY
     * Header
     * Add restaurants
     * Restaurant list
+3. Add React context API
 
 ## Day 9
 ### Setup React Router  
