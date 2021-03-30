@@ -8,8 +8,6 @@ const RestaurantList = props => {
         const fetchData = async () => {
             try {
                 const response = await RestaurantFinder.get("/");
-                console.log(response);
-                console.log(response.data.data.restaurants);
                 setRestaurants(response.data.data.restaurants);
             } catch (err) {}
         };
