@@ -4,6 +4,16 @@ I am following the [PERN Stack Course](https://www.youtube.com/watch?v=J01rYl9T3
 
 Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sYgV-NV6S5_-pqLGChoNQ).
 
+## Day 11
+1. Install axios for fetch API
+
+        npm install axios
+
+2. Install cors to use different domain name for client and server side
+
+        npm install cors
+
+
 ## Day 10
 1. Change bootstrap version back to v4.6
 2. Add three compoents 

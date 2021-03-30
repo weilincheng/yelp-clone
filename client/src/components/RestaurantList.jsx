@@ -1,6 +1,24 @@
-import React from 'react'
+import React, { useContext, useEffect } from "react";
+import RestaurantFinder from "../apis/RestaurantFinder";
+import { RestaurantsContext } from "../context/RestaurantsContext";
 
-const RestaurantList = () => {
+const RestaurantList = props => {
+    const { restaurants, setRestaurants } = useContext(RestaurantsContext);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await RestaurantFinder.get("/");
+                console.log("This is resposne.data.data");
+                console.log(response.data.data);
+                console.log("This is restaurants");
+                console.log(restaurants);
+                setRestaurants(response.data.data.restaurants);
+            } catch (err) {}
+        };
+
+        fetchData();
+    }, []);
+
     return (
         <div className="list-group">
             <table className="table table-hover table-dark">
@@ -15,6 +33,20 @@ const RestaurantList = () => {
                     </tr>
                 </thead>
                 <tbody>
+                    {/*
+                    {restaurants.map((restaurant) => {
+                        return (
+                            <tr>
+                                <td>restaurant.name</td>
+                                <td>restaurant.location</td>
+                                <td>{"$".repeat(restaurant.price_range)}</td>
+                                <td>review</td>
+                                <td><button className="btn btn-warning">Update</button></td>
+                                <td><button className="btn btn-danger">Delete</button></td>
+                            </tr>
+                        );
+                    })}
+                    */}
                     <tr>
                         <td>mcdonalds</td>
                         <td>New York</td>
@@ -26,7 +58,7 @@ const RestaurantList = () => {
                     <tr>
                         <td>mcdonalds</td>
                         <td>New York</td>
-                        <td>$$</td>
+                        <td>$$$</td>
                         <td>Rating</td>
                         <td><button className="btn btn-warning">Update</button></td>
                         <td><button className="btn btn-danger">Delete</button></td>
@@ -34,7 +66,7 @@ const RestaurantList = () => {
                 </tbody>
             </table>
         </div>
-    )
-}
+    );
+};
 
-export default RestaurantList
+export default RestaurantList;

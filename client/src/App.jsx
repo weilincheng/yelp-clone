@@ -1,9 +1,9 @@
-import React from 'react';
-import Home from './routes/Home';
-import RestaurantDetailPage from './routes/RestaurantDetailPage';
-import UpdatePage from './routes/UpdatePage';
+import React from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
-import { RestaurantsContextProvider } from './context/RestaurantsContext';
+import Home from "./routes/Home";
+import RestaurantDetailPage from "./routes/RestaurantDetailPage";
+import UpdatePage from "./routes/UpdatePage";
+import { RestaurantsContextProvider } from "./context/RestaurantsContext";
 
 const App = () => {
     return (
