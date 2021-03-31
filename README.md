@@ -13,6 +13,8 @@ Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sY
 
         npm install cors
 
+## Day 11
+Redering restaurants list with a map function to iterate each restaurant in RestaurantList component. 
 
 ## Day 10
 1. Change bootstrap version back to v4.6
