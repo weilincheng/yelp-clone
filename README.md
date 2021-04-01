@@ -4,6 +4,11 @@ I am following the [PERN Stack Course](https://www.youtube.com/watch?v=J01rYl9T3
 
 Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sYgV-NV6S5_-pqLGChoNQ).
 
+## Day 13
+Implemented the logic to delete restaurant from the restaurants list:
+* Add onClick event to retrieve the id of restaurant to be deleted 
+* Use filter function to filter out the restaurant with specified id 
+
 ## Day 12
 1. Redering restaurants list with a map function to iterate each restaurant in RestaurantList component. 
 
