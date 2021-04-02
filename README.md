@@ -4,6 +4,13 @@ I am following the [PERN Stack Course](https://www.youtube.com/watch?v=J01rYl9T3
 
 Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sYgV-NV6S5_-pqLGChoNQ).
 
+## Day 14
+Implemented the logic to update restaurant 
+* Add UpdatePage to show the three input forms for user to update
+* Use useHistory api to push to the UpdatePage when clicking the update button 
+* Use useEffect to fill the current restaurant information 
+* Use useHistory api to push back to Home 
+
 ## Day 13
 Implemented the logic to delete restaurant from the restaurants list:
 * Add onClick event to retrieve the id of restaurant to be deleted 
