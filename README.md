@@ -4,6 +4,9 @@ I am following the [PERN Stack Course](https://www.youtube.com/watch?v=J01rYl9T3
 
 Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sYgV-NV6S5_-pqLGChoNQ).
 
+## Day 16
+Implemented star rating component by using [fontawesome](https://fontawesome.com) icon.
+
 ## Day 15
 Implemented detail page
 * Add onClick event to push to detail page when click the restaurant in restaurants list 
