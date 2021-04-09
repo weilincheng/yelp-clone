@@ -4,6 +4,12 @@ I am following the [PERN Stack Course](https://www.youtube.com/watch?v=J01rYl9T3
 
 Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sYgV-NV6S5_-pqLGChoNQ).
 
+## Day 18
+1. Implement add review compoenents
+2. Implement the logic to display existing review
+    * Retrieve review information from database by using db.query
+    * Use map function to iterate each review and render each review component
+
 ## Day 17
 Implemented reviews component.
 
