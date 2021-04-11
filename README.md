@@ -4,6 +4,12 @@ I am following the [PERN Stack Course](https://www.youtube.com/watch?v=J01rYl9T3
 
 Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sYgV-NV6S5_-pqLGChoNQ).
 
+## Day 19
+Added review express route  
+* Use post request to add new review into database   
+
+        INSERT INTO reviews (restaurant_id, name, review, rating) VALUES (123, 'Carl', 'Good restuarnt!', 4)
+
 ## Day 18
 1. Implement add review compoenents
 2. Implement the logic to display existing review
