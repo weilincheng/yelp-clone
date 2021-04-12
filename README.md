@@ -4,6 +4,13 @@ I am following the [PERN Stack Course](https://www.youtube.com/watch?v=J01rYl9T3
 
 Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sYgV-NV6S5_-pqLGChoNQ).
 
+## Day 20
+Implement add review front end 
+1. Add disabled option in rating column to prevent user from sending default value "Rating"
+2. Add onClick event handleSubmitReview
+    * Use RestaurantFinder to send a post request to call addReview route
+    * Use `history.push('/')` and `history.push(locaiton.pathname)` to refresh the page
+
 ## Day 19
 Added review express route  
 * Use post request to add new review into database   
