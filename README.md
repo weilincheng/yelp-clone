@@ -4,6 +4,11 @@ I am following the [PERN Stack Course](https://www.youtube.com/watch?v=J01rYl9T3
 
 Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sYgV-NV6S5_-pqLGChoNQ).
 
+## Day 21
+Implement the logic to show average rating 
+1. Use `LEFT JOIN` and `GROUP BY` to retrieve count and average rating of reviews for individual restaurant
+2. Add renderRating function to render the average rating on restaurant list component
+
 ## Day 20
 Implement add review front end 
 1. Add disabled option in rating column to prevent user from sending default value "Rating"
