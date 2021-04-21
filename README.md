@@ -8,6 +8,13 @@ Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sY
 
 ## Part2: Deploying App onto Ubuntu/AWS
 
+## Day 2
+1. Create key pair
+2. Lanuch an instance
+    * Machine image: Ubuntu Server 20.04
+    * Instance type: t2.micro
+3. Connet to ubuntu server with `ssh -i <pem_file> ubuntu@<ip_address>`
+
 ### Day 1
 1. Change the baseURL based on env `NODE_ENV`
 
