@@ -8,7 +8,12 @@ Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sY
 
 ## Part2: Deploying App onto Ubuntu/AWS
 
-## Day 2
+### Day 3
+1. Install and configure PostgreSQL
+    * Create a Postgres user
+    * Associate password to the newly created user with `ALTER USER ubuntu PASSWORD 'password';`
+
+### Day 2
 1. Create key pair
 2. Lanuch an instance
     * Machine image: Ubuntu Server 20.04
