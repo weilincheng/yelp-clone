@@ -8,6 +8,22 @@ Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sY
 
 ## Part2: Deploying App onto Ubuntu/AWS
 
+### Day 4
+1. Cloning Postgres database
+    * Dump database schema and data 
+    
+            pg_dump -U postgres -f yelp.pgsql -C yelp
+    * Copy the `yelp.pgsql` file to the production server 
+    
+            scp -i yelp.pem yelp.pgsql ubuntu@1.1.1.1:/home/ubuntu/
+    * Login to the production server and create database 
+    
+            postgres=# create database yelp;
+    * Import the database schema and data from the `yelp.pgsql`   
+    
+            psql yelp < /home/ubuntu/yelp.pgsql
+
+
 ### Day 3
 1. Install and configure PostgreSQL
     * Create a Postgres user
