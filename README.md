@@ -8,8 +8,22 @@ Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sY
 
 ## Part2: Deploying App onto Ubuntu/AWS
 
+### Day 5
+1. Cloning git repo
+2. Install [Node.js](https://github.com/nodesource/distributions/blob/master/README.md) on Ubuntu server
+
+        curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+        sudo apt-get install -y nodejs
+3. Install [PM2](https://pm2.keymetrics.io)
+
+        npm install pm2 -g
+4. Start the app through PM2
+
+        pm2 start apps/yelp-clone/server/server.js --name yelp-clone
+
+
 ### Day 4
-1. Cloning Postgres database
+* Cloning Postgres database
     * Dump database schema and data 
     
             pg_dump -U postgres -f yelp.pgsql -C yelp
@@ -25,7 +39,7 @@ Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sY
 
 
 ### Day 3
-1. Install and configure PostgreSQL
+* Install and configure PostgreSQL
     * Create a Postgres user
     * Associate password to the newly created user with `ALTER USER ubuntu PASSWORD 'password';`
 
@@ -37,7 +51,7 @@ Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sY
 3. Connet to ubuntu server with `ssh -i <pem_file> ubuntu@<ip_address>`
 
 ### Day 1
-1. Change the baseURL based on env `NODE_ENV`
+* Change the baseURL based on env `NODE_ENV`
 
 ## Part1: Build PERN Stack app locally 
 
