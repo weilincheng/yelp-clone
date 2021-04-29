@@ -8,6 +8,27 @@ Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sY
 
 ## Part2: Deploying App onto Ubuntu/AWS
 
+### Day 6
+1. Install React
+
+        cd client
+        npm install 
+
+2. Create production ready vresion of React frontned 
+
+        npm run build 
+
+3. Install and enable NGINX
+
+        sudo apt install nginx -y
+        sudo systemctl enable nginx
+
+4. Use `systemctl` to check whether nginx is active 
+
+        sudo systemctl enable nginx
+
+
+
 ### Day 5
 1. Cloning git repo
 2. Install [Node.js](https://github.com/nodesource/distributions/blob/master/README.md) on Ubuntu server
