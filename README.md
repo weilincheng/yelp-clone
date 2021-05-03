@@ -8,6 +8,42 @@ Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sY
 
 ## Part2: Deploying App onto Ubuntu/AWS
 
+### Day 7
+1. Edit inbound rules under security groups to add:
+    * Type: HTTP, Source: 0.0.0.0/0
+    * Type: HTTPS, Source: 0.0.0.0/0
+2. Create a new file under `/etc/nginx/sites-available/` cirectory. It is recommended to name it the same name as the domain for the web app.
+
+        cd /etc/nginx/sites-available
+        sudo cp default yelp-clone.com
+3. Open the new server block file `yelp-clone.xyz` and modify it so it matches below:
+
+        server {
+                listen 80;
+                listen [::]:80;
+
+                root /home/ubuntu/apps/yelp-clone/client/build;
+
+                # Add index.php to the list if you are using PHP
+                index index.html index.htm index.nginx-debian.html;
+
+                server_name yelp-clone.com www.yelp-clone.com;
+
+                location / {
+                        try_files $uri /index.html;
+                }
+
+                location /api {
+                proxy_pass http://localhost:3001;
+                proxy_http_version 1.1;
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'upgrade';
+                proxy_set_header Host $host;
+                proxy_cache_bypass $http_upgrade;
+                }
+        }
+  
+
 ### Day 6
 1. Install React
 
