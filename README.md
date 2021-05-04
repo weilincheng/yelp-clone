@@ -8,11 +8,32 @@ Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sY
 
 ## Part2: Deploying App onto Ubuntu/AWS
 
+### Day 8
+1. Register a domain name
+2. Add DNS record 
+    * Type: A Record, Host: @, Value: IP4 address, TTL: 30 minutes
+    * Type: A Record, Host: www, Value: IP4 address, TTL: 30 minutes
+3. Setting environment variable 
+	* Create a file called `.env` in home directory and paste all the required environment variables 
+	* Add below command to `/home/ubuntu/.profile` file to source the .env file after reconnect
+
+			set -o allexport; source /home/ubuntu/.env; set +o allexport
+
+4. Enable firewall
+
+		sudo ufw status
+		sudo ufw allow ssh
+		sudo ufw allow http
+		sudo ufw allow https
+		sudo ufw enable
+		sudo ufw status
+
+
 ### Day 7
 1. Edit inbound rules under security groups to add:
     * Type: HTTP, Source: 0.0.0.0/0
     * Type: HTTPS, Source: 0.0.0.0/0
-2. Create a new file under `/etc/nginx/sites-available/` cirectory. It is recommended to name it the same name as the domain for the web app.
+2. Create a new file under `/etc/nginx/sites-available/` directory. It is recommended to name it the same name as the domain for the web app.
 
         cd /etc/nginx/sites-available
         sudo cp default yelp-clone.com
@@ -50,7 +71,7 @@ Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sY
         cd client
         npm install 
 
-2. Create production ready vresion of React frontned 
+2. Create production ready version of React frontend 
 
         npm run build 
 
@@ -102,10 +123,10 @@ Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sY
 
 ### Day 2
 1. Create key pair
-2. Lanuch an instance
+2. Launch an instance
     * Machine image: Ubuntu Server 20.04
     * Instance type: t2.micro
-3. Connet to ubuntu server with `ssh -i <pem_file> ubuntu@<ip_address>`
+3. Connect to ubuntu server with `ssh -i <pem_file> ubuntu@<ip_address>`
 
 ### Day 1
 * Change the baseURL based on env `NODE_ENV`
@@ -131,7 +152,7 @@ Added review express route
         INSERT INTO reviews (restaurant_id, name, review, rating) VALUES (123, 'Carl', 'Good restuarnt!', 4)
 
 ### Day 18
-1. Implement add review compoenents
+1. Implement add review components
 2. Implement the logic to display existing review
     * Retrieve review information from database by using db.query
     * Use map function to iterate each review and render each review component
@@ -159,7 +180,7 @@ Implemented the logic to delete restaurant from the restaurants list:
 * Use filter function to filter out the restaurant with specified id 
 
 ### Day 12
-1. Redering restaurants list with a map function to iterate each restaurant in RestaurantList component. 
+1. Rendering restaurants list with a map function to iterate each restaurant in RestaurantList component. 
 
 2. Implement add restaurant feature 
     * Use useState to retrieve the information user type in the input box  
@@ -178,7 +199,7 @@ Implemented the logic to delete restaurant from the restaurants list:
 
 ### Day 10
 1. Change bootstrap version back to v4.6
-2. Add three compoents 
+2. Add three components 
     * Header
     * Add restaurants
     * Restaurant list
@@ -238,7 +259,7 @@ Implemented the logic to delete restaurant from the restaurants list:
 2. Implemented "Create a restaurant" route. Use "returning *" so that when we create the new restaurants the postgres db returns the new entry.  
 
 ### Day 6
-Implented two routes:
+Implemented two routes:
 1. Update restaurant
 2. Delete restaurant
 
@@ -260,7 +281,7 @@ Implemented below routes.
 
 ### Day2
 1. Install dotenv and nodemon.  
-2. Teste get method which sends a json format back.   
+2. Test get method which sends a json format back.   
 3. Add three api:
     * Get all restaurants
     * Get individual restaurants
