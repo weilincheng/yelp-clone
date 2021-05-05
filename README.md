@@ -8,6 +8,28 @@ Course developed by [Sanjeev Thiyagarajan](https://www.youtube.com/channel/UC2sY
 
 ## Part2: Deploying App onto Ubuntu/AWS
 
+### Day 9
+1. Configuring SSL
+    * Install [certbot](https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx.html)
+
+            sudo snap install --classic certbot
+    
+    * Prepare the Certbot command
+
+            sudo ln -s /snap/bin/certbot /usr/bin/certbot
+
+    * Get and install certificates 
+
+            sudo certbot --nginx
+
+2. Fix database issue
+    * Once environment variable setting changed, you need to restart the pm2 server with specified server id. You can use `pm2 status` to check the server id
+
+            pm2 restart 0
+
+3. Finally! I have deployed a yelp clone! 
+
+
 ### Day 8
 1. Register a domain name
 2. Add DNS record 
